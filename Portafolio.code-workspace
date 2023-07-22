@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../DevWebCamp_inicio"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portafolio"
+	}
+}
