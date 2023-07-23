@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 
-app=Flask(__name__)
+app = Flask(__name__, static_folder='public') #//Con esta le digo donde estara mi carpeta con archivos estaticos
 
 @app.route("/")
 def inicio():
