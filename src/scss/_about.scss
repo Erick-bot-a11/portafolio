@@ -1,0 +1,136 @@
+
+.about{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr ; 
+
+    &__nombre{
+        font-size: 10vh;
+        font-weight: 700;
+    }
+}
+
+.infoPersonal{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10vh;
+    align-items: center;
+    &__dato{
+
+    }
+}
+
+.iconoInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__icono{
+        width: 60px;
+    }
+
+    &__info{
+        font-size: 2.5vh;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 4vh;
+        color: #ff2f8b;
+        margin: auto 1vh auto 0;
+    }
+    
+}
+.contenedor--experiencia{
+    background-color: rgba(0, 161, 182, 0.067);
+    padding: 1vh 0 5vh 0;
+    h2{
+        margin: 5vh 0;
+    }
+}
+.experiencia{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    color: rgb(0, 0, 0);
+    gap: 2vh;
+    flex-direction: column;
+
+    &__imagen{
+        width: 200px;
+    }
+    &__imagenSEBN{
+        width: 100px;
+    }
+    &__contenedor{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding: 20px 20px;
+        border-radius: 20px;
+        gap: 20px;
+        border: 1px solid #b4b4ff;
+
+        &:hover{
+            .experiencia__contenedor--fecha{
+                color: #8383ea;;
+            }
+            .experiencia__contenedor--titulo{
+                color:  #3c8bff;
+            }
+            background: rgb(205 226 251);
+        }
+    }
+
+}
+
+.tercerParte{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    &__titulo{
+        text-align: center;
+        color: #3c8bff;
+        margin: 5vh 0;
+    }
+}
+
+.curso{
+        margin: 3vh 0;
+    &__titulo{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__enlace{
+        text-decoration: none;
+        color: blue;
+    }
+
+}
+
+.skills__contenedor{
+}
+.skill{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    &__s{
+        padding: 5px 10px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        margin-right: 1.5rem;
+        font-size: 16px;
+        
+        border-radius: 5px;
+        font-weight: 600;
+        
+        &--l{
+            background: rgba(153, 153, 153, 0.2);
+            color: #666;
+        }
+        &--p{
+            background: rgb(106 240 119 / 20%);
+            color: #63ba65;
+        }
+    }
+}

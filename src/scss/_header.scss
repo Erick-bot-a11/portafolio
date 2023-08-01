@@ -1,0 +1,57 @@
+@use "variables" as v;
+
+.cabecera{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.navegacion{
+    // background: rgb(255,255,255);
+    // background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 22%, rgba(235,235,235,1) 58%, rgba(242,242,242,1) 80%, rgba(213,213,213,1) 100%);
+    padding: 7px 10%;
+    margin: 0 auto;
+    //background: linear-gradient(90deg, rgba(254,191,0,1) 0%, rgba(237,196,69,1) 71%, rgba(189,148,24,1) 100%);
+    // background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__enlaces{
+        display: flex;
+        gap: 2vh;
+    }
+    &__enlace{
+        transition: background-color 0.5s;
+        margin: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        padding: 1px 8px;
+        font-weight: 500;
+        border-radius: 10px;
+        &:hover,&:active{ 
+            background-color: v.$negro;
+            color: v.$blanco;
+            
+        }
+    }
+
+    &__numero{
+        font-size: 5px;
+    }
+}
+
+.logo{
+    width: 65px;
+    background-color: white;
+    border-radius: 40px;
+    transition-duration: 500ms;
+    &:hover {
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+    }
+}

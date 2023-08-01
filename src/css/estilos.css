@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(162, 0, 255);
+}
+
+p {
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: rgb(255, 149, 0);
+}

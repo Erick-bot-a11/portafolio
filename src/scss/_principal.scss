@@ -1,0 +1,68 @@
+.cont{
+    background-image: url("/public/img/fondo-tecnologia-digital-alambre-malla-red_1017-27428.avif");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    padding: 8vh 0;
+
+}
+
+.encabezado{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    &__nombre{
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        display: inline-block;
+      
+      span {
+    
+          font: 700 4em/1 "Oswald", sans-serif;
+          letter-spacing: 0;
+          display: block;
+          text-shadow: 0 0 80px rgba(255,255,255,.5);
+    
+    /* Clip Background Image */
+    
+          background: url(/public/img/abstract-wide-stylish-retro-background-with-zig-zag-oblique-zebra-stripes-line-pattern-black-and-blue-color-ready-for-your-design-free-vector.jpg) repeat-y;
+          -webkit-background-clip: text;
+          background-clip: text;
+    
+    /* Animate Background Image */
+    
+          -webkit-text-fill-color: transparent;
+          -webkit-animation: aitf 80s linear infinite;
+    
+    /* Activate hardware acceleration for smoother animations */
+          -webkit-backface-visibility: hidden;
+    
+      }
+    }
+}
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.avatar_header{
+    width: 70vh;
+    width: 59vh;
+    border-radius: 50%;
+
+}
+
+
+.pensamiento{
+    background: beige;
+    color: black;
+    text-align: center;
+    padding: 5vh 40vh;
+    margin: 5vh 0;
+}

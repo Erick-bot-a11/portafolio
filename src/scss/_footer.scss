@@ -1,0 +1,7 @@
+@use "variables" as v;
+.footer{
+    background: v.$principal;
+    background: linear-gradient(90deg, rgba(254,191,0,1) 0%, rgba(237,196,69,1) 71%, rgba(189,148,24,1) 100%);
+    margin-top: 3vh;
+    height: 20px;
+}

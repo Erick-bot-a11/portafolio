@@ -15,5 +15,9 @@ def about():
 def contacto():
     return render_template("sitio/contacto.html")
 
+@app.route("/proyectos")
+def proyectos():
+    return render_template("sitio/proyectos.html")
+
 if __name__=="__main__":
     app.run(debug=True)

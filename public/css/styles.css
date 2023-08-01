@@ -1,16 +1,379 @@
-body {
-  background-color: rgb(162, 0, 255);
-}
-
 p {
   font-size: larger;
   font-family: "Courier New", Courier, monospace;
 }
 
-h1 {
-  font-family: "Courier New", Courier, monospace;
+body {
+  padding: 60px 0 0 0;
 }
 
-body {
-  background-color: rgb(0, 255, 34);
+p {
+  font-family: sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+
+.linea {
+  border-top: 1px solid #c8c8c0;
+  height: 2px;
+  max-width: 100%;
+  padding: 0;
+  margin: 10px auto;
+  margin: 5vh 0;
+}
+
+.icono {
+  width: 40px;
+}
+
+.icono-sm {
+  width: 20px;
+}
+
+.cabecera {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.navegacion {
+  padding: 7px 10%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navegacion__enlaces {
+  display: flex;
+  gap: 2vh;
+}
+.navegacion__enlace {
+  transition: background-color 0.5s;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 1px 8px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.navegacion__enlace:hover, .navegacion__enlace:active {
+  background-color: black;
+  color: white;
+}
+.navegacion__numero {
+  font-size: 5px;
+}
+
+.logo {
+  width: 65px;
+  background-color: white;
+  border-radius: 40px;
+  transition-duration: 500ms;
+}
+.logo:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.footer {
+  background: rgb(254, 191, 0);
+  background: linear-gradient(90deg, rgb(254, 191, 0) 0%, rgb(237, 196, 69) 71%, rgb(189, 148, 24) 100%);
+  margin-top: 3vh;
+  height: 20px;
+}
+
+.cont {
+  background-image: url("/public/img/fondo-tecnologia-digital-alambre-malla-red_1017-27428.avif");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  padding: 8vh 0;
+}
+
+.encabezado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.encabezado__nombre {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+}
+.encabezado__nombre span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  display: block;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(/public/img/abstract-wide-stylish-retro-background-with-zig-zag-oblique-zebra-stripes-line-pattern-black-and-blue-color-ready-for-your-design-free-vector.jpg) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.avatar_header {
+  width: 70vh;
+  width: 59vh;
+  border-radius: 50%;
+}
+
+.pensamiento {
+  background: beige;
+  color: black;
+  text-align: center;
+  padding: 5vh 40vh;
+  margin: 5vh 0;
+}
+
+.about {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.about__nombre {
+  font-size: 10vh;
+  font-weight: 700;
+}
+
+.infoPersonal {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10vh;
+  align-items: center;
+}
+.iconoInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.iconoInfo__icono {
+  width: 60px;
+}
+.iconoInfo__info {
+  font-size: 2.5vh;
+  text-align: center;
+}
+.iconoInfo h3 {
+  font-size: 4vh;
+  color: #ff2f8b;
+  margin: auto 1vh auto 0;
+}
+
+.contenedor--experiencia {
+  background-color: rgba(0, 161, 182, 0.067);
+  padding: 1vh 0 5vh 0;
+}
+.contenedor--experiencia h2 {
+  margin: 5vh 0;
+}
+
+.experiencia {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  color: rgb(0, 0, 0);
+  gap: 2vh;
+  flex-direction: column;
+}
+.experiencia__imagen {
+  width: 200px;
+}
+.experiencia__imagenSEBN {
+  width: 100px;
+}
+.experiencia__contenedor {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 20px 20px;
+  border-radius: 20px;
+  gap: 20px;
+  border: 1px solid #b4b4ff;
+}
+.experiencia__contenedor:hover {
+  background: rgb(205, 226, 251);
+}
+.experiencia__contenedor:hover .experiencia__contenedor--fecha {
+  color: #8383ea;
+}
+.experiencia__contenedor:hover .experiencia__contenedor--titulo {
+  color: #3c8bff;
+}
+
+.tercerParte {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.tercerParte__titulo {
+  text-align: center;
+  color: #3c8bff;
+  margin: 5vh 0;
+}
+
+.curso {
+  margin: 3vh 0;
+}
+.curso__titulo {
+  font-size: 18px;
+  font-weight: 700;
+}
+.curso__enlace {
+  text-decoration: none;
+  color: blue;
+}
+
+.skill {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill__s {
+  padding: 5px 10px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-right: 1.5rem;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.skill__s--l {
+  background: rgba(153, 153, 153, 0.2);
+  color: #666;
+}
+.skill__s--p {
+  background: rgba(106, 240, 119, 0.2);
+  color: #63ba65;
+}
+
+.container-icons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 500;
+}
+
+.bi-plus-circle-fill {
+  font-size: 50PX;
+  transition: all 300ms;
+  color: #E44C36;
+}
+
+.container-icons:hover .bi-plus-circle-fill {
+  transform: rotate(180deg);
+}
+
+.row-icon {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 300ms;
+  opacity: 1;
+  padding: 5px;
+}
+
+.container-icons:hover .row-icon {
+  opacity: 1;
+}
+
+.row-icon h4 {
+  transform: translate(-10px, 10px);
+  background: rgba(0, 0, 0, 0.6);
+  height: 20px;
+  font-weight: 300;
+  padding: 2px 2px;
+  color: white;
+  border-radius: 5px;
+}
+
+.row-icon label {
+  font-size: 40px;
+}
+
+.icon1 {
+  transform: translate(-100px, -40px) scale(0);
+  color: blue;
+}
+
+.icon2 {
+  transform: translate(0px, -90px) scale(0);
+  color: #ff6464;
+}
+
+.icon3 {
+  transform: translate(-96px, -180px) scale(0);
+  color: blue;
+}
+
+.icon4 {
+  transform: translate(-10px, -250px) scale(0);
+  color: #47ee47;
+}
+
+.icon5 {
+  transform: translate(0, -350px) scale(0);
+  color: black;
+}
+
+.container-icons:hover .icon1 {
+  transform: translate(0px, -50px) scale(1);
+}
+
+.container-icons:hover .icon2 {
+  transform: translate(0px, -100px) scale(1);
+}
+
+.container-icons:hover .icon3 {
+  transform: translate(0px, -150px) scale(1);
+}
+
+.container-icons:hover .icon4 {
+  transform: translate(0px, -200px) scale(1);
+}
+
+.container-icons:hover .icon5 {
+  transform: translate(0px, -250px) scale(1);
+}
+
+.bi-facebook:hover {
+  cursor: pointer;
+}
+
+.bi-linkedin:hover {
+  cursor: pointer;
+}
+
+.bi-github:hover {
+  cursor: pointer;
+}
+
+.bi-envelope-fill:hover {
+  cursor: pointer;
+}
+
+.bi-whatsapp:hover {
+  cursor: pointer;
 }
