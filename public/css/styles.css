@@ -1,8 +1,3 @@
-p {
-  font-size: larger;
-  font-family: "Courier New", Courier, monospace;
-}
-
 body {
   padding: 60px 0 0 0;
 }
@@ -11,6 +6,11 @@ p {
   font-family: sans-serif;
   font-size: 17px;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .linea {
@@ -28,6 +28,13 @@ p {
 
 .icono-sm {
   width: 20px;
+}
+
+.btn-ver {
+  background: linear-gradient(90deg, rgb(50, 92, 255) 0%, rgb(50, 164, 255) 42%, rgb(50, 157, 255) 84%);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 10px;
 }
 
 .cabecera {
@@ -84,9 +91,19 @@ p {
   background: rgb(254, 191, 0);
   background: linear-gradient(90deg, rgb(254, 191, 0) 0%, rgb(237, 196, 69) 71%, rgb(189, 148, 24) 100%);
   margin-top: 3vh;
-  height: 20px;
+  padding: 2vh 4vh 6vh 8vh;
+  display: flex;
+  justify-content: space-between;
 }
-
+.footer__redes {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.footer__redes-a {
+  color: black;
+  font-size: 20px;
+}
 .cont {
   background-image: url("/public/img/fondo-tecnologia-digital-alambre-malla-red_1017-27428.avif");
   background-repeat: no-repeat;
@@ -227,7 +244,8 @@ p {
 
 .tercerParte {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 4vh;
 }
 .tercerParte__titulo {
   text-align: center;
@@ -248,13 +266,16 @@ p {
 }
 
 .skill {
+  margin: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  transition-delay: 0.1s;
 }
 .skill__s {
   padding: 5px 10px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
   margin-right: 1.5rem;
   font-size: 16px;
@@ -268,6 +289,11 @@ p {
 .skill__s--p {
   background: rgba(106, 240, 119, 0.2);
   color: #63ba65;
+}
+.skill__s--pro {
+  background: rgb(75, 4, 246);
+  color: #ffffff;
+  margin-right: 1vh;
 }
 
 .container-icons {
@@ -377,4 +403,120 @@ p {
 
 .bi-whatsapp:hover {
   cursor: pointer;
+}
+
+.contenedor_proyectosP {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor_proyectoP {
+  flex: none;
+  width: 33.3333%;
+  padding: 1rem;
+}
+
+.proyectoP {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.proyectoP__titulo {
+  text-align: center;
+}
+.proyectoP__descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 1rem;
+  color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.1s ease-in-out;
+}
+.proyectoP__imagen {
+  transform: scale(1);
+  transition: 0.25s ease-in-out;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.proyectoP__lista {
+  list-style: none;
+}
+.proyectoP__detalles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proyectoP__enlace {
+  color: #0dfdd3;
+}
+.proyectoP:hover {
+  background-color: #064578;
+}
+.proyectoP:hover .proyectoP__imagen {
+  transform: scale(1.1);
+  opacity: 0;
+}
+.proyectoP:hover .proyectoP__descripcion {
+  opacity: 1;
+}
+
+.contenedor_proyectosD {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  margin-top: 10vh;
+  padding: 0 1vh;
+}
+
+.contenedor_proyectoD {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5vh;
+}
+
+.proyectoD {
+  display: flex;
+}
+.proyectoD__imagen {
+  width: 50vh;
+  padding: 2vh;
+  border-radius: 6vh;
+  transform: perspective(100px) rotateY(4deg);
+}
+.proyectoD__titulo {
+  text-align: center;
+}
+.proyectoD__enlace {
+  text-align: center;
+}
+.proyectoD__a {
+  padding: 1vh 3vh;
+  border: 3px solid black;
+  color: black;
+}
+.proyectoD__a:hover {
+  background-color: black;
+  color: white;
 }
