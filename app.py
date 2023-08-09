@@ -19,5 +19,22 @@ def contacto():
 def proyectos():
     return render_template("sitio/proyectos.html")
 
+@app.route("/proyectos/salon")
+def salon():
+    return render_template("sitio/salon.html")
+
+@app.route("/proyectos/camp")
+def camp():
+    return render_template("sitio/camp.html")
+
+@app.route("/proyectos/task")
+def task():
+    return render_template("sitio/uptask.html")
+
+
+@app.route("/proyectos/ine")
+def ine():
+    return render_template("sitio/ine.html")
+
 if __name__=="__main__":
     app.run(debug=True)

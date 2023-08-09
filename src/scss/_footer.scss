@@ -1,20 +1,28 @@
 @use "variables" as v;
 .footer{
-    background: v.$principal;
-    background: linear-gradient(90deg, rgba(254,191,0,1) 0%, rgba(237,196,69,1) 71%, rgba(189,148,24,1) 100%);
+    background: #4a4a4a;
     margin-top: 3vh;
-    padding: 2vh 4vh 6vh 8vh;
+    color: white;
+    padding: 5vh 4vh 6vh 8vh;
     display: flex;
     justify-content: space-between;
+    gap: 20vh;
     &__redes{
         display: flex;
         flex-direction: column;
         gap: 1vh;
+
+        &-icono{
+            margin-right: 3vh;
+        }
     }
     &__redes-a{
 
-        color: black;
+        color: white;
         font-size: 20px;
+        &:hover{
+            cursor: pointer;
+        }
     }
     &__info{
 

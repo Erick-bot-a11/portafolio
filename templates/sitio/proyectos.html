@@ -1,5 +1,5 @@
 {% include "sitio/header.html" %}
-<h2 style="margin: 30px 0;"><center>Mis proyectos</center></h2>
+<h2 class="titulo"><center>Mis proyectos</center></h2><p><center>Prueba en colocarte sobre la imagen</center></p>
   <main class="contenedor_proyectosP">
     
     <div class="contenedor_proyectoP">
@@ -147,7 +147,7 @@
                 <h4 class="proyectoD__titulo">Salón de belleza</h4>
                 <p class="proyectoD__descripcion2">Este sitio web consta de roles de usuario, administrados en una base de datos, los usuarios pueden agendar 
                     citas en un salón de belleza y un administrador puede gestionar dichas citas.
-                </p>
+                </p><p>Disculpa que te pueda marcar si es un sitio peligroso.</p>
                 <ul class="skill">
                     <li class="skill__s skill__s--pro">HTML</li>
                     <li class="skill__s skill__s--pro">CSS</li>
@@ -157,38 +157,81 @@
                     <li class="skill__s skill__s--pro">Node js</li>
                     <li class="skill__s skill__s--pro">Gulp</li>
                 </ul>
-                <p>Usuario de Ejemplo: usuarioNormal@correo.com</p>
+                <p>Usuario de Ejemplo: demostracion@correo.com</p>
                 <p>Contraseña: 222222</p>
-                <a style="color: blue;"  href="https://bellezapichon.000webhostapp.com/" target="_blank">Puedes verlo aquí</a>
-                <p class="proyectoD__enlace"><a class="proyectoD__a"  href="#" target="_blank">Leer más</a></p>
+                <a style="color: blue;"  href="https://salonpichon.000webhostapp.com/" target="_blank">Puedes verlo aquí</a>
+                <p class="proyectoD__enlace"><a class="proyectoD__a"  href="/proyectos/salon" >Leer más</a></p>
             </div>
         </div>
     </div>
 
     <div class="contenedor_proyectoD">
-        <img class="proyectoD__imagen" src="/public/img/barberia.jpg" alt="imagen-proyecto"> 
-     <div class="proyectoD">
-         <div class="proyectoD__descripcion">
-             <h4 class="proyectoD__titulo">Uptask</h4>
-             <p class="proyectoD__descripcion2">Sitio web donde se pueden administrar proyectos, asignando tareas o marcando las completas. 
-                Un usuario puede crear una cuenta y llevar un registro de sus proyectos.
-             </p>
-             <ul class="skill">
-                 <li class="skill__s skill__s--pro">HTML</li>
-                 <li class="skill__s skill__s--pro">CSS</li>
-                 <li class="skill__s skill__s--pro">Javascript</li>
-                 <li class="skill__s skill__s--pro">PHP</li>
-                 <li class="skill__s skill__s--pro">SQL</li>
-                 <li class="skill__s skill__s--pro">Node js</li>
-                 <li class="skill__s skill__s--pro">Gulp</li>
-             </ul>
-             <p>Usuario de Ejemplo: usuarioNormal@correo.com</p>
-             <p>Contraseña: 222222</p>
-             <a style="color: blue;"  href="https://bellezapichon.000webhostapp.com/" target="_blank">Puedes verlo aquí</a>
-             <p class="proyectoD__enlace"><a class="proyectoD__a"  href="#" target="_blank">Leer más</a></p>
-         </div>
-     </div>
- </div>
+        <div class="proyectoD">
+            <div class="proyectoD__descripcion">
+                <h4 class="proyectoD__titulo">Uptask</h4>
+                <p class="proyectoD__descripcion2">Sitio web donde se pueden administrar proyectos, asignando tareas o marcando las completas. 
+                    Un usuario puede crear una cuenta y llevar un registro de sus proyectos.
+                </p>
+                <ul class="skill">
+                    <li class="skill__s skill__s--p">HTML</li>
+                    <li class="skill__s skill__s--p">CSS</li>
+                    <li class="skill__s skill__s--p">Javascript</li>
+                    <li class="skill__s skill__s--p">PHP</li>
+                    <li class="skill__s skill__s--p">SQL</li>
+                    <li class="skill__s skill__s--p">Node js</li>
+                    <li class="skill__s skill__s--p">Gulp</li>
+                </ul>
+
+                <p class="proyectoD__enlace"><a class="proyectoD__a"  href="/proyectos/task">Leer más</a></p>
+            </div>
+            
+        </div>
+        <img class="proyectoD__imagen" src="/public/img/uptask.png" alt="imagen-proyecto"> 
+    </div>
+
+    <div class="contenedor_proyectoD">
+        <img class="proyectoD__imagen" src="/public/img/header.webp" alt="imagen-proyecto"> 
+        <div class="proyectoD">
+            <div class="proyectoD__descripcion">
+                <h4 class="proyectoD__titulo">DepWebCamp</h4>
+                <p class="proyectoD__descripcion2">Simula el sitio web de una empresa dedicada a crear eventos o conferencias, en este se informa de las diferentes actividades a realizar, también los horarios, ponentes y precios disponibles 
+                    para poder asistir al evento. Como administrador podemos editar toda esta información, ya que está conectada a una base de datos.
+                    
+                <ul class="skill">
+                    <li class="skill__s skill__s--pro">HTML</li>
+                    <li class="skill__s skill__s--pro">CSS</li>
+                    <li class="skill__s skill__s--pro">Javascript</li>
+                    <li class="skill__s skill__s--pro">PHP</li>
+                    <li class="skill__s skill__s--pro">SQL</li>
+                    <li class="skill__s skill__s--pro">Node js</li>
+                    <li class="skill__s skill__s--pro">Gulp</li>
+                </ul>
+                <p class="proyectoD__enlace"><a class="proyectoD__a"  href="/proyectos/camp" >Leer más</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_proyectoD">
+        <div class="proyectoD">
+            <div class="proyectoD__descripcion">
+                <h4 class="proyectoD__titulo">Repositorio de Expedientes y más</h4>
+                <p class="proyectoD__descripcion2">Una nueva función en la red del INE, permite al departamento de RH consultar los expedientes y documentos específicos totalmente escaneados de empleados del instituto a nivel estatal de una manera más rápida y sencilla.
+                     Como administrador se puede crear, eliminar y actualizar dichos expedientes así como subir documentos a sus propios servidores.
+                </p>
+                <ul class="skill">
+                    <li class="skill__s skill__s--p">HTML</li>
+                    <li class="skill__s skill__s--p">CSS</li>
+                    <li class="skill__s skill__s--p">Javascript</li>
+                    <li class="skill__s skill__s--p">PHP</li>
+                    <li class="skill__s skill__s--p">SQL</li>
+                </ul>
+
+                <p class="proyectoD__enlace"><a class="proyectoD__a"  href="/proyectos/ine">Leer más</a></p>
+            </div>
+            
+        </div>
+        <img class="proyectoD__imagen" src="/public/img/ine.png" alt="imagen-proyecto"> 
+    </div>
   </div>
   {% include "sitio/footer.html" %}
   
