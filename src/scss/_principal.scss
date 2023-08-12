@@ -1,7 +1,25 @@
+@use "mixins" as m;
+
 .cont{
-    background-image: url("/public/img/fondo-tecnologia-digital-alambre-malla-red_1017-27428.avif");
+    background-image: url("/public/img/fondo6.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 80vh;
+    margin-top: 5%;
+    @include m.telefonoM{
+        background-image: url("/public/img/fondo21.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    @include m.tablet{
+        height: 100%;
+    }
+
+    @include m.desktopB{
+        padding: 0 10%;
+        height: 90vh;
+    }
+
 }
 .contenedor{
     width: 90%;
@@ -9,34 +27,76 @@
     padding: 8vh 0;
 }
 
+.contenedor-encabezado{
+    width: 90%;
+    margin: 0 20%;
+    padding: 8vh 0;
+
+    @include m.tablet{
+        margin: 0px 2%;
+    }
+    @include m.telefono{
+        margin: 0px 2%;
+    }
+    @include m.telefonoMmin {
+        margin: 0;
+    }
+}
+
 .encabezado{
-    
+    &__info{
+        padding: 0 20vh;
+
+        @include m.telefonoM{
+            padding: 13vh 2vh;
+            color: antiquewhite;
+        }
+        @include m.telefonoMmin {
+            padding: 6vh 5vh;
+        }
+        @include m.tablet{
+            padding: 0 8vh;
+            
+        }
+    }
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    justify-items: center;
     &__nombre{
         text-transform: uppercase;
         letter-spacing: 0.5em;
         display: inline-block;
-      
+        @include m.telefonoM{
+            // background: url("/public/img/animated-text-fill.png") ;
+            // -webkit-background-clip: text;
+            margin-bottom: 4vh;
+          }
       span {
-    
+            background: url("/public/img/fondo-letras5.jpg") repeat-y;
           font: 700 4em/1 "Oswald", sans-serif;
           letter-spacing: 0;
           display: block;
+          color: black;
           text-shadow: 0 0 80px rgba(255,255,255,.5);
     
     /* Clip Background Image */
     
-          background: url(/public/img/abstract-wide-stylish-retro-background-with-zig-zag-oblique-zebra-stripes-line-pattern-black-and-blue-color-ready-for-your-design-free-vector.jpg) repeat-y;
+          
+          @include m.telefonoM{
+            font: 700 3em/1 "Oswald", sans-serif;
+            letter-spacing: 1;
+          }
+          @include m.tablet{
+            font: 700 4em/1 "Oswald", sans-serif;
+            }
+         @include m.desktopB{
+            font: 700 5em/1 "Oswald", sans-serif;
+         }
           -webkit-background-clip: text;
           background-clip: text;
     
     /* Animate Background Image */
     
           -webkit-text-fill-color: transparent;
-          -webkit-animation: aitf 80s linear infinite;
+          -webkit-animation: aitf 20s linear infinite;
     
     /* Activate hardware acceleration for smoother animations */
           -webkit-backface-visibility: hidden;
@@ -62,6 +122,27 @@
     background: beige;
     color: black;
     text-align: center;
-    padding: 5vh 40vh;
-    margin: 5vh 0;
+    margin: 0;
+    padding: 3% 7%;
+
+    @include m.telefono{
+        padding: 3% 7%;
+    }
+    @include m.tablet{
+        margin: 5% 0;
+    }
+    @include m.desktopB{
+        padding: 1% 7%;
+        margin: 2% 0;
+    }
+    // @include m.tablet{
+    //     padding: 0;
+    //     padding: 0 7vh;
+    // }
+
+    
+}
+
+.h3animado{
+    padding: 0 11vh 0 0;
 }

@@ -1,18 +1,44 @@
 from flask import Flask
 from flask import render_template
+from flask import request,redirect,url_for,flash,session
+import smtplib
+import os
+
 
 app = Flask(__name__, static_folder='public') #//Con esta le digo donde estara mi carpeta con archivos estaticos
+# app.config['SESSION_TYPE'] = 'filesystem'
+app.secret_key="anystringhere"
+# app.config['SESSION_TYPE'] = 'memcached'
+# app.config['SECRET_KEY'] = 'super secret key'
+# sess = session()
 
 @app.route("/")
 def inicio():
     return render_template("sitio/index.html")
 
-@app.route("/sobre-mi")
+@app.route("/about")
 def about():
     return render_template("sitio/about.html")
 
-@app.route("/contacto")
+@app.route("/contacto",methods=["GET","POST"])
 def contacto():
+    if request.method=="POST":
+        #Establece la conexion al servidor de SMTP
+        conexion=smtplib.SMTP(host="smtp.gmail.com",port=587)
+        conexion.ehlo()
+
+        #Encriptacion TLS
+        conexion.starttls()
+
+        #inicia secion en el servidor de correos
+        conexion.login(user="pichonerick388@gmail.com",password="aventjdpqvqebiem")
+        nombre=request.form["nombre"]
+        mensaje=request.form["mensaje"]
+        remitente=request.form["correo"]
+        conexion.sendmail(from_addr=remitente,to_addrs="pichonerick388@gmail.com",msg=nombre+"\n"+remitente+"\n"+mensaje)
+        conexion.quit()
+        flash("He recibido tu mensaje, te responderé pronto. Si quieres contarme más, puedes enviar otro mensaje.")
+        return redirect(url_for("contacto"))
     return render_template("sitio/contacto.html")
 
 @app.route("/proyectos")
@@ -35,6 +61,7 @@ def task():
 @app.route("/proyectos/ine")
 def ine():
     return render_template("sitio/ine.html")
+
 
 if __name__=="__main__":
     app.run(debug=True)

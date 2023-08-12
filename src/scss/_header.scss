@@ -1,10 +1,15 @@
 @use "variables" as v;
+@use "mixins" as m;
 
 .cabecera{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
+    height: 80px;
+    @include m.telefonoM{
+        background-color: #050608;
+    }
     z-index: 1;
 }
 
@@ -18,10 +23,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     &__enlaces{
         display: flex;
         gap: 2vh;
+
+        @include m.telefonoM{
+            display: none;
+        }
     }
     &__enlace{
         transition: background-color 0.5s;
@@ -41,6 +49,60 @@
 
     &__numero{
         font-size: 5px;
+    }
+
+    @include m.telefonoB{
+        padding: 7px 3%;
+    }
+    @include m.telefonoM{
+        padding: 7px 7%;
+    }
+
+}
+
+.active{
+    @include m.telefonoM{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #fcf9ea;
+        transition: 0.5s ease-in-out;
+        text-align: center;
+        .navegacion{
+            &__enlaces{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                font-size: 25px;
+                gap: 5vh;
+            } 
+        }
+
+        .logo{
+            position: absolute;
+            top: 1%;
+        }
+        .navegacion-lista{
+            position: absolute;
+            top: 1.3%;
+            right: 7%;
+            background-image: url(/public/img/icons/x-circle.svg);
+        }
+    }
+}
+
+.navegacion-lista{
+    display: none;
+    @include m.telefonoM{
+
+        display: block;
+        background-image: url(/public/img/icons/menu-b3.svg);
+        width: 7vh;
+        height: 7vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        
     }
 }
 

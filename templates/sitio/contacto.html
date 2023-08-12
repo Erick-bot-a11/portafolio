@@ -1,12 +1,58 @@
 {% include "sitio/header.html" %}
 <h2 class="titulo"><center>Contacto</center></h2>
+
+{% with messages=get_flashed_messages() %}
+{% if messages %}
+<div class="alerta">
+    {% for message in messages %}
+    <p>{{ message }}</p>
+    {% endfor %}
+</div>
+{% endif %}
+{% endwith %}
+
+
 <div class="contenedor">
     <div class="contacto">
         <div class="contacto__info">
-
+            <p>Actualmente, estoy buscando un espacio para mis prácticas profesionales, pero puedes contactarme para colaborar en proyectos, o incluso crear tu propio portafolio.</p>
+            <div class="footer__redes">
+                <a class="enlace-iner" href="https://www.facebook.com/erick.pichon.16/"                      target="_blank"><label class="footer__redes-b"><i class="bi bi-facebook footer__redes-icono"></i>Facebook</label></a>
+                <a class="enlace-iner" href="https://www.linkedin.com/in/erick-pichon-cuahtepitzi-468a12213" target="_blank"><label class="footer__redes-b"><i class="bi bi-linkedin footer__redes-icono"></i>Linkedin</label></a>
+                <a class="enlace-iner" href="mailto:erick.pichonc@alumno.buap.mx" target="_blank"><label  class="footer__redes-b"><i class="bi bi-envelope-fill footer__redes-icono"></i>E-mail</label></a>
+                <a class="enlace-iner" href="https://github.com/Erick-bot-a11" target="_blank"><label  class="footer__redes-b"><i class="bi bi-github footer__redes-icono"></i>Github</label></a>
+            </div>
         </div>
-        <form action="" class="formulario">
+        <form action="/contacto" class="formulario" method="post">
+            <div class="campo">
+                <label for="idnombre">Nombre:</label>
+                <input 
+                    type="text"
+                    name="nombre"
+                    id="idnombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+            </div>
 
+            <div class="campo">
+                <label for="idcorreo">Correo:</label>
+                <input 
+                    type="email"
+                    name="correo"
+                    id="idcorreo"
+                    placeholder="Tu e-mail"
+                    required
+                >
+            </div>
+
+            <div class="campo-mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensjae" name="mensaje" rows="5" placeholder="Cuéntame lo que deseas decirme." required></textarea>
+            </div>
+                <input class="formulario__submit" type="submit" value="Enviar">
+            
+            
         </form>
     </div>
 </div>
