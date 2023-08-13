@@ -9,6 +9,8 @@ $desktop: 1024px;
 $desktopM: 1440px;
 $desktopB: 1500px;
 
+
+
 @mixin telefono {
     @media (max-width: $telefono) {
         @content;
@@ -65,6 +67,12 @@ $desktopB: 1500px;
 
 @mixin desktopB {
     @media (min-width: $desktopB) {
+        @content;
+    }
+}
+
+@mixin max9 {
+    @media (max-width: 900px) {
         @content;
     }
 }

@@ -207,7 +207,7 @@ a {
 @media (max-width: 540px) {
   .navegacion-lista {
     display: block;
-    background-image: url(/public/img/icons/menu-b3.svg);
+    background-image: url(/public/img/icons/three-dots.svg);
     width: 7vh;
     height: 7vh;
     background-repeat: no-repeat;
@@ -453,6 +453,9 @@ a {
   font-size: 10vh;
   font-weight: 700;
 }
+.about__desk {
+  display: none;
+}
 @media (max-width: 480px) {
   .about {
     width: 95%;
@@ -479,16 +482,33 @@ a {
     font-size: 500%;
   }
 }
+@media (min-width: 1024px) {
+  .about {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about__tel {
+    display: none;
+  }
+  .about__desk {
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+  }
+  .about__imagen {
+    height: fit-content;
+  }
+}
 
 .infoPersonal {
   width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10vh;
+  gap: 10px;
   align-items: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .infoPersonal {
     width: 95%;
     grid-template-columns: repeat(2, 1fr);
@@ -499,7 +519,8 @@ a {
 }
 @media (min-width: 768px) {
   .infoPersonal {
-    margin: 0;
+    width: 95%;
+    margin: 0 auto;
     gap: 3vh;
   }
 }
@@ -507,7 +528,7 @@ a {
 .iconoInfo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .iconoInfo__icono {
   width: 60px;
@@ -521,7 +542,7 @@ a {
   color: #ff2f8b;
   margin: auto 1vh auto 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .iconoInfo {
     justify-content: center;
   }
@@ -542,8 +563,10 @@ a {
   .iconoInfo__icono {
     width: 40px;
   }
+  .iconoInfo__info {
+    font-size: 18px;
+  }
 }
-
 .contenedor--experiencia {
   background-color: rgba(0, 161, 182, 0.067);
   padding: 1vh 0 5vh 0;
