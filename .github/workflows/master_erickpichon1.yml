@@ -24,8 +24,8 @@ jobs:
 
       - name: Create and start virtual environment
         run: |
-          python -m venv venv
-          source venv/bin/activate
+          python -m venv .venv
+          source .venv/bin/activate
       
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -60,4 +60,10 @@ jobs:
         with:
           app-name: 'erickpichon1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D5D700EC9F4945D4A6032043E57A3324 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_781692CF68874A99806A680F45E77A6F }}
+      - name: 'Run app.py'
+        run: |
+          source .venv/bin/activate
+          pip list
+          python app.py
+          
