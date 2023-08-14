@@ -63,5 +63,6 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_781692CF68874A99806A680F45E77A6F }}
       - name: 'Run app.py'
         run: |
+          pip list
           python app.py
           
