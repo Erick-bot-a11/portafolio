@@ -427,6 +427,11 @@ a {
     margin: 5% 0;
   }
 }
+@media (max-width: 768px) {
+  .pensamiento {
+    margin-top: 20px;
+  }
+}
 @media (min-width: 1500px) {
   .pensamiento {
     padding: 1% 7%;
