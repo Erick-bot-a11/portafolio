@@ -64,4 +64,5 @@ jobs:
       - name: Run app.py on Azure
         run: |
           source venv/bin/activate  # Activa el entorno virtual
+          pip list
           python app.py
