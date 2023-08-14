@@ -64,5 +64,6 @@ jobs:
       - name: Run app.py on Azure
         run: |
           source .venv/bin/activate
+          pip install -r requirements.txt
           pip list
           python app.py
