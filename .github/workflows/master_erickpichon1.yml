@@ -61,3 +61,7 @@ jobs:
           app-name: 'erickpichon1'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_781692CF68874A99806A680F45E77A6F }}
+      - name: 'Run app.py'
+        run: |
+          python app.py
+          
