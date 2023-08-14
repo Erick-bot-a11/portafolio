@@ -63,6 +63,5 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BF6BB221BDBD449DA7EACA20DA29509B }}
       - name: Run app.py on Azure
         run: |
-          source venv/bin/activate  # Activa el entorno virtual
           pip list
           python app.py
