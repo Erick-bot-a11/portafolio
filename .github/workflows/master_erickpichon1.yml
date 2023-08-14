@@ -22,9 +22,8 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Create and start virtual environment
+      - name: Activate virtual environment
         run: |
-          python -m venv venv
           . venv/bin/activate 
       
       - name: Install dependencies
@@ -63,4 +62,5 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BF6BB221BDBD449DA7EACA20DA29509B }}
       - name: Run app.py on Azure
         run: |
-            python app.py
+          source venv/bin/activate  # Activa el entorno virtual
+          python app.py
