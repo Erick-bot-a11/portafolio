@@ -26,6 +26,11 @@
     margin: 0 auto;
     padding: 8vh 0;
 }
+.contenedor-2{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2vh 0;
+}
 
 .contenedor-encabezado{
     width: 90%;
@@ -46,7 +51,9 @@
 .encabezado{
     &__info{
         padding: 0 20vh;
-
+        h3{
+            font-weight: 700;
+        }
         @include m.telefonoM{
             padding: 13vh 2vh;
             color: antiquewhite;

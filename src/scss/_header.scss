@@ -9,6 +9,7 @@
     height: 80px;
     @include m.telefonoM{
         background-color: #050608;
+        height: 70px;
     }
     z-index: 1;
 }
@@ -94,11 +95,10 @@
 .navegacion-lista{
     display: none;
     @include m.telefonoM{
-
         display: block;
         background-image: url(/public/img/icons/three-dots.svg);
-        width: 7vh;
-        height: 7vh;
+        width: 50px;
+        height: 50px;
         background-repeat: no-repeat;
         background-size: 100%;
 
@@ -116,5 +116,8 @@
         -webkit-transform-style: preserve-3d;
         transform: rotateY(180deg);
         transform-style: preserve-3d;
+    }
+    @include m.telefonoM{
+        width: 55px;
     }
 }

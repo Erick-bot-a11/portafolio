@@ -36,6 +36,7 @@ a {
 
 .titulo {
   margin: 12vh 0 2vh 0;
+  font-weight: 700;
 }
 
 .video {
@@ -88,6 +89,11 @@ a {
   width: 80%;
   padding: 0.5rem;
 }
+@media (max-width: 480px) {
+  .campo input {
+    width: 100%;
+  }
+}
 
 .campo-mensaje {
   display: flex;
@@ -99,6 +105,11 @@ a {
 .campo-mensaje textarea {
   width: 80%;
   padding: 0.5rem;
+}
+@media (max-width: 480px) {
+  .campo-mensaje textarea {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .campo-mensaje {
@@ -126,6 +137,7 @@ a {
 @media (max-width: 540px) {
   .cabecera {
     background-color: #050608;
+    height: 70px;
   }
 }
 
@@ -208,8 +220,8 @@ a {
   .navegacion-lista {
     display: block;
     background-image: url(/public/img/icons/three-dots.svg);
-    width: 7vh;
-    height: 7vh;
+    width: 50px;
+    height: 50px;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -226,6 +238,11 @@ a {
   -webkit-transform-style: preserve-3d;
   transform: rotateY(180deg);
   transform-style: preserve-3d;
+}
+@media (max-width: 540px) {
+  .logo {
+    width: 55px;
+  }
 }
 
 .footer {
@@ -310,6 +327,12 @@ a {
   padding: 8vh 0;
 }
 
+.contenedor-2 {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2vh 0;
+}
+
 .contenedor-encabezado {
   width: 90%;
   margin: 0 20%;
@@ -336,6 +359,9 @@ a {
 }
 .encabezado__info {
   padding: 0 20vh;
+}
+.encabezado__info h3 {
+  font-weight: 700;
 }
 @media (max-width: 540px) {
   .encabezado__info {
@@ -828,6 +854,7 @@ a {
   padding: 0;
   width: 100%;
   height: 100%;
+  min-height: 250px;
 }
 .proyectoP__titulo {
   text-align: center;
@@ -886,7 +913,7 @@ a {
   margin: 0 auto;
   position: relative;
   width: auto;
-  margin-top: 10vh;
+  margin-top: 40px;
   padding: 0 1vh;
 }
 
@@ -899,15 +926,6 @@ a {
 .contenedor_proyectoD:nth-child(even) {
   grid-template-columns: 3fr 1fr;
 }
-@media (max-width: 480px) {
-  .contenedor_proyectoD {
-    display: flex;
-    flex-direction: column;
-  }
-  .contenedor_proyectoD:nth-child(even) {
-    flex-direction: column-reverse;
-  }
-}
 @media (min-width: 768px) {
   .contenedor_proyectoD {
     grid-template-columns: 1fr 2fr;
@@ -916,6 +934,15 @@ a {
   }
   .contenedor_proyectoD:nth-child(even) {
     grid-template-columns: 2fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor_proyectoD {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor_proyectoD:nth-child(even) {
+    flex-direction: column-reverse;
   }
 }
 

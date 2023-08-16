@@ -47,6 +47,7 @@ a{
 
 .titulo{
     margin: 12vh 0 2vh 0;
+    font-weight: 700;
 }
 
 .video{
@@ -98,6 +99,10 @@ a{
     input{
         width: 80%;
         padding: .5rem;
+
+        @include m.telefono{
+            width: 100%;
+        }
     }
 }
 .campo-mensaje{
@@ -109,6 +114,9 @@ a{
     textarea{
         width: 80%;
         padding: .5rem;
+        @include m.telefono{
+            width: 100%;
+        }
     }
     @include m.tabletMax{
         flex-direction: column;
