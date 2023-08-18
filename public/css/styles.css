@@ -923,16 +923,13 @@ a {
   gap: 5vh;
   margin-bottom: 7vh;
 }
-.contenedor_proyectoD:nth-child(even) {
-  grid-template-columns: 3fr 1fr;
-}
 @media (min-width: 768px) {
   .contenedor_proyectoD {
     grid-template-columns: 1fr 2fr;
     gap: 3vh;
     align-items: center;
   }
-  .contenedor_proyectoD:nth-child(even) {
+  .contenedor_proyectoD:nth-of-type(4n) {
     grid-template-columns: 2fr 1fr;
   }
 }
@@ -941,7 +938,7 @@ a {
     display: flex;
     flex-direction: column;
   }
-  .contenedor_proyectoD:nth-child(even) {
+  .contenedor_proyectoD:nth-child(4n) {
     flex-direction: column-reverse;
   }
 }
