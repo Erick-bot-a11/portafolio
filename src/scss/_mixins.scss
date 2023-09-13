@@ -60,7 +60,7 @@ $desktopB: 1500px;
 }
 
 @mixin desktopM {
-    @media (min-width: $desktop) {
+    @media (min-width: $desktopM) {
         @content;
     }
 }

@@ -16,12 +16,20 @@
     &__desk{
         display: none;
     }
-
+    
+    &__mix{
+        text-align: center;
+        margin-bottom: 20px;
+    }
     @include m.telefono{
         width: 95%;
         grid-template-columns: 1fr; 
         gap: 5vh;
 
+        &__imagen{
+            width: 70%;
+            border-radius: 10%;
+        }
         &__info{
 
         }
@@ -34,21 +42,27 @@
     @include m.tablet{
         grid-template-columns: 1fr; 
         margin: 0;
-
+        width: 100%;
         &__mix{
-            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
             align-items: center;
+            justify-items: end;
         }
         &__imagen{
-            width: 40%;
+            width: 100%;
+            border-radius: 10%;
         }
         &__nombre{
             font-size:  500%;
+            text-align: initial;
         }
     }
 
     @include m.desktop{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         &__tel{
             display: none;
@@ -59,9 +73,12 @@
             gap: 8vw;
         }
         &__imagen{
-            height: fit-content;
+            width: auto;
         }
         
+    }
+    @include m.desktopM{
+        width: 80%;
     }
 
 
