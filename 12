@@ -1,0 +1,40 @@
+[33m72fa160[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33m22ea06b[m HEAD@{1}: commit: version flask
+[33m92fb852[m HEAD@{2}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33m09cb344[m HEAD@{3}: commit: quite node_modules
+[33m8efde4d[m HEAD@{4}: pull --tags origin master: Fast-forward
+[33m4bb6f5c[m HEAD@{5}: pull --tags origin master: Fast-forward
+[33m1af2da4[m HEAD@{6}: reset: moving to HEAD~3
+[33m4bb6f5c[m HEAD@{7}: pull --tags origin master: Fast-forward
+[33m960d2d7[m HEAD@{8}: reset: moving to HEAD~1
+[33mb8a7cd1[m HEAD@{9}: commit: prueba
+[33m960d2d7[m HEAD@{10}: commit: actualizacion de enlaces java y C
+[33m0acb272[m HEAD@{11}: commit: Agregue mi cv y errores de ortografia
+[33m91d4b9e[m HEAD@{12}: commit: cambio de mensjae HOLA
+[33m7b1260b[m HEAD@{13}: commit: cambie el link de linkedin
+[33m9bb0441[m HEAD@{14}: commit (merge): Merge branch 'master' of https://github.com/Erick-bot-a11/portafolio
+[33m1a2b7d9[m HEAD@{15}: commit: subir la foto
+[33m70501d9[m HEAD@{16}: commit: cambio a las imagenes del proyectos
+[33m239016b[m HEAD@{17}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33mf1c5e33[m HEAD@{18}: commit: Version 1.1
+[33mc7c4141[m HEAD@{19}: commit: deply
+[33mb77d1e2[m HEAD@{20}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33m9016d46[m HEAD@{21}: commit: cambio al titulo PRUeBA
+[33mdfe693c[m HEAD@{22}: pull --tags origin master: Fast-forward
+[33ma02e6cf[m HEAD@{23}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33m865af19[m HEAD@{24}: commit: Cambie el nombre de .txt
+[33m12a3617[m HEAD@{25}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33meeef826[m HEAD@{26}: commit: cree el requirements
+[33m89dc4f1[m HEAD@{27}: checkout: moving from master to master
+[33m89dc4f1[m HEAD@{28}: pull --tags: Merge made by the 'ort' strategy.
+[33ma239928[m HEAD@{29}: commit: Commit made from VS Code Azure Static Web Apps
+[33md4554f9[m HEAD@{30}: commit: Sitio web al 90%
+[33m0cbd569[m HEAD@{31}: commit: Ya quedaron los proyectos
+[33md387715[m HEAD@{32}: commit: cambios en este proyecto
+[33mc536099[m HEAD@{33}: commit: Arregle los detalles que pasaban con las animaciones
+[33mef867be[m HEAD@{34}: commit: seccion de about y pagina principal listas
+[33mbf220b6[m HEAD@{35}: commit: Tenia el problema de que no reconocia mis estilos
+[33m6c6ee78[m HEAD@{36}: commit: Ya puedo compilar sass, y tambien escucha por los cambios
+[33mab9182e[m HEAD@{37}: commit: Cambio3
+[33ma271f6f[m HEAD@{38}: commit: Cambio 2
+[33m4d6cdb9[m HEAD@{39}: commit (initial): primer subida a mi repositorio de github
