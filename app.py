@@ -64,5 +64,5 @@ def ine():
 
 
 if __name__=="__main__":
-    port = int(os.environ.get("PORT", 5000))  # Render te da el puerto
+    port = int(os.environ.get("PORT", 5000))  
     app.run(host='0.0.0.0', port=port)
