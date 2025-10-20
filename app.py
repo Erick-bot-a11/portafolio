@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import request,redirect,url_for,flash,session
 import smtplib
+import os
 
 
 app = Flask(__name__, static_folder='public') #//Con esta le digo donde estara mi carpeta con archivos estaticos
@@ -63,4 +64,5 @@ def ine():
 
 
 if __name__=="__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Render te da el puerto
+    app.run(host='0.0.0.0', port=port)
