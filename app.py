@@ -6,11 +6,11 @@ import os
 
 
 app = Flask(__name__, static_folder='public') #//Con esta le digo donde estara mi carpeta con archivos estaticos
-# app.config['SESSION_TYPE'] = 'filesystem'
-app.secret_key="anystringhere"
+
 # app.config['SESSION_TYPE'] = 'memcached'
 # app.config['SECRET_KEY'] = 'super secret key'
 # sess = session()
+emailPass = os.getenv("EMAIL_PASSWORD")
 
 @app.route("/")
 def inicio():
@@ -31,7 +31,7 @@ def contacto():
         conexion.starttls()
 
         #inicia secion en el servidor de correos
-        conexion.login(user="pichonerick388@gmail.com",password="aventjdpqvqebiem")
+        conexion.login(user="pichonerick388@gmail.com",password=emailPass)
         nombre=request.form["nombre"]
         mensaje=request.form["mensaje"]
         remitente=request.form["correo"]
